@@ -1,15 +1,14 @@
-﻿# examesegurocarro
-Teste Reply
+﻿# Segurocarro
 
-#1. Ambiente de Execução
+## 1. Ambiente de Execução
 
 ##1.1. Ambiente de Execução Desejável
 ➢ Visual Studio 2017. Framework 4.7. IIS 7.5 ou maior.
 ➢ Oracle Database 11g. Caso não tenha o Oracle baixe a versão Oracle Database Express Edition (XE) Release 11.2.0.2.0 (11gR2) no link: https://www.oracle.com/database/technologies/xe-prior-releases.html
 
-#2. Questões Práticas
+## 2. Questões Práticas
 
-##2.1. Descrição do Exame
+### 2.1. Descrição do Exame
 
 Você irá construir um serviço que registre o Cálculo de Seguro de Veículos. Deve ser calculado como mostrado abaixo:
 
@@ -51,10 +50,10 @@ Obs: Este cálculo é hipotético e didático.
 **Recursos de apoio**
 • Clean Architecture em .NET - https://github.com/ivanpaulovich/clean-architecture-manga
 
-##2.2. Critérios de avaliação
+### 2.2. Critérios de avaliação
 • Código Limpo.
 • Automação de testes de unidade.
 • Clean Architecture.
 
-##2.3. Entregáveis
+### 2.3. Entregáveis
 • Código Fonte em repositório Git (GitHub ou qualquer outro que possa compartilhar o projeto.)
