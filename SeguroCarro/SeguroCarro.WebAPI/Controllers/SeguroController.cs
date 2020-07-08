@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SeguroCarro.WebAPI.Controllers
 {
-    [Route("api/carroseguro")]
+    [Route("api/carroseguro/seguros")]
     [ApiController]
     public class SeguroController : Controller
     {
@@ -17,7 +17,7 @@ namespace SeguroCarro.WebAPI.Controllers
             _seguroService = seguroService;
         }
 
-        [HttpGet("GetListSeguros", Name = "GetListSeguros")]
+        [HttpGet()]
         public ActionResult<IEnumerable<Seguro>> Get()
         {
             try
@@ -26,11 +26,11 @@ namespace SeguroCarro.WebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex}");
+                return StatusCode(500);
             }
         }
 
-        [HttpPost("PostSeguro", Name = "PostSeguro")]
+        [HttpPost]
         public ActionResult<Seguro> Post([FromBody] Seguro seguro)
         {
             try
@@ -40,11 +40,11 @@ namespace SeguroCarro.WebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex}");
+                return StatusCode(500);
             }
         }
 
-        [HttpGet("GetAveragePrices", Name = "GetAveragePrices")]
+        [HttpGet("media")]
         public ActionResult GetAverage()
         {
             try
@@ -53,11 +53,11 @@ namespace SeguroCarro.WebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex}");
+                return StatusCode(500);
             }
         }
 
-        [HttpGet("GetSeguro/{id}", Name = "GetSeguro")]
+        [HttpGet("{id}")]
         public ActionResult<Seguro> GetById(int id)
         {
             try
@@ -66,7 +66,7 @@ namespace SeguroCarro.WebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex}");
+                return StatusCode(500);
             }
         }
     }

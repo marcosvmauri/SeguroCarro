@@ -18,7 +18,7 @@ namespace SeguroCarro.WebAPI.Controllers
             _carroService = carroService;
         }
 
-        [HttpGet("GetListCarros", Name = "GetListCarros")]
+        [HttpGet("carros", Name = "carros")]
         public ActionResult<IEnumerable<Carro>> Get()
         {
             try
@@ -27,7 +27,7 @@ namespace SeguroCarro.WebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest($"Erro: {ex}");
+                return StatusCode(500);
             }
         }
     }
