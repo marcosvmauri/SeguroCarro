@@ -2,7 +2,7 @@
 
 ## 1. Ambiente de Execução
 
-##1.1. Ambiente de Execução Desejável
+## 1.1. Ambiente de Execução Desejável
 • Visual Studio 2017. Framework 4.7. IIS 7.5 ou maior.
 • Oracle Database 11g. Caso não tenha o Oracle baixe a versão Oracle Database Express Edition (XE) Release 11.2.0.2.0 (11gR2) no link: https://www.oracle.com/database/technologies/xe-prior-releases.html
 
